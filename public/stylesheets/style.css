@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #666666 no-repeat center fixed;
+  background-size:contain;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#toTop{
+    width:64px;
+    height:64px;
+    display: block;
+    background: #eee url(../images/toTop.png) ;
+    position: fixed;
+    right: 16px;
+    top:80%;
+    opacity: 0.8;
+    display: none;
+}
+#toTop:hover{
+    opacity: 1;
+    /*filter:alpha(opacity=100);*/
+    background: #ddd url(../images/toTop.png);
+}

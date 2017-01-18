@@ -1,0 +1,8 @@
+{{!这里的if_even是使用hbs.registerHelper定义的逻辑}}
+{{#if_even num}}
+       {{this.num}}是偶数
+ {{else}}
+       {{this.num}}是奇数
+{{/if_even}}
+
+{{> userMessage tagName="h1" }}

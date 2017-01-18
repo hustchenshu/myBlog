@@ -1,0 +1,20 @@
+<p>blogread</p>
+{{#each blogs}}
+<div class="panel panel-info" height=300px>
+    <div class="panel-heading">
+        <h2 class="panel-title">
+            <a href="/users/readWithId/{{_id}}">{{title}}</a>
+        </h2>
+        <h5>{{postDate}}</h5>
+    </div>
+
+    <div class="panel-body" style="height:300px; overflow-y:auto">
+        {{{content}}}
+    </div>
+    <div class="panel-footer footer-right">
+        <a href="/users/readWithUser/{{user}}">{{user}}</a>
+    </div>
+</div>
+
+<br>
+{{/each}}

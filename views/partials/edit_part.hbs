@@ -1,0 +1,17 @@
+<form method="post" action='post' role=form>
+  标题：<br />
+  <input type="text" name="title" /><br />
+  <br />
+  {{!<textarea name="post" rows="20" cols="100"></textarea><br />}}
+  <div class="form-group">
+    <label for="name">正文：</label>
+    <textarea class="form-control" rows="20" name='post'></textarea>
+  </div>
+  <br>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" name="isMD" value="option1" checked>MarkDown支持
+  </label>
+</div>
+  <input type="submit" value="发表" />
+</form>

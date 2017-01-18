@@ -1,0 +1,35 @@
+<div class="carousel slide container-fluid" id="myCarousel">
+	<ol class="carousel-indicators">
+	{{#each items}}
+		<li data-target='#myCarousel' data-slide-to="{{id}}"></li>
+	{{/each}}
+	</ol>
+	<div class="carousel-inner">
+	{{#each items}}
+		{{#if active}}
+			<div class="item active">
+				<img class='img-rounde' src="{{src}}" alt="{{alt}}">
+				<div class="carousel-caption">{{title}}</div>
+			</div>
+		{{else}}
+		<div class="item">
+			<img class='img-rounde' src="{{src}}" alt="{{alt}}">
+			<div class="carousel-caption">{{title}}
+			<p>
+                <a href="#" class="btn btn-primary" role="button">
+                    按钮
+                </a> 
+                <a href="#" class="btn btn-default" role="button">
+                    按钮
+                </a>
+            </p>
+			</div>
+		</div>
+		{{/if}}
+	{{/each}}
+	</div>
+	<a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">&rsaquo;</a>
+</div>

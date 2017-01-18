@@ -1,0 +1,15 @@
+{{#compare type "eq" 'read'}}
+{{> blog_part}}
+{{/compare}}
+
+{{#compare type "eq" 'edit'}}
+{{> edit_part}}
+{{/compare}}
+
+{{#compare type "eq" 'manage'}}
+{{> userInfo_part}}
+{{/compare}}
+
+{{#compare type "eq" 'collections'}}
+{{> collection_part}}
+{{/compare}}

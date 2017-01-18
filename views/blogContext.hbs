@@ -1,0 +1,15 @@
+<div class="panel panel-info" height=300px>
+    <div class="panel-heading">
+        <h2 class="panel-title">
+            <a href="/users/readWithId/{{blog._id}}">{{blog.title}}</a>
+        </h2>
+        <h5>{{postDate}}</h5>
+    </div>
+
+    <div class="panel-body">
+        {{{blog.content}}}
+    </div>
+    <div class="panel-footer footer-right">
+        <a href="/users/readWithUser/{{blog.user}}">{{blog.user}}</a>
+    </div>
+</div>
